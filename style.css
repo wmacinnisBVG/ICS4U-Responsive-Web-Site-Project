@@ -3,7 +3,16 @@
     font-family: momCake;
     src: url("Fonts/MomcakeBold.otf");
 }
+.mom-cake{
+    font-family: momCake;
 
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    font-family: 'Open Sans', sans-serif;
+}
 /* General */
 ::selection {
     background: #33bc05; /* WebKit/Blink Browsers */
@@ -45,15 +54,30 @@ a:hover{
     color: #008000;
 }
 footer{
-    background-color: #000000;
+    background-color: #383838;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
     color: white;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+footer .flexbox{
+    gap: 10vh;
+
+}
+.footer-box{
+
+}
+.footer-box img{
+    text-align: center;
 }
 .website-heading{
     font-family: Graduate;
+}
+.flexbox{
+    display: flex;
 }
 /* Footer */
 footer .social-media li{
@@ -134,6 +158,16 @@ footer a{
     background-image: url("Images/DSC_1006.jpg");
     background-position: center;
 }
+.homepage-divider-2{
+    background-image: url("Images/DSC_1004.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.homepage-divider-3{
+    background-image: url("Images/DSC_1832.jpg");
+    background-position: center;
+    background-size: cover;
+}
 .image-divider{
     height: 300px;
 }
@@ -156,14 +190,37 @@ footer a{
     color: black;
     padding: 10px;
 }
+.house-leagues-child{
+    text-align: center;
+    padding: 25px;
+}
+.house-leagues-flexbox{
+    text-align: center;
+    justify-content: center;
+}
+.leadership-team{
+    flex-wrap: wrap;
+}
+.leadership-team img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
 
+}
 /* Navbar */
 /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -173,6 +230,9 @@ footer a{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: 0.5s;
+    height: 100%;
+    font-weight: bold;
 }
 
 /* Change the color of links on hover */
@@ -183,7 +243,7 @@ footer a{
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #008000;
     color: white;
 }
 
