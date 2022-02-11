@@ -2,87 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Falcon House</title>
-
+    <title>News</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-    <header>
-        <div class="site-perpetual-masthead">
-            <h1 class="website-heading">Falcon House Homepage</h1>
-            <p>The <u>only</u> place for Falcon House information.</p>
-        </div>
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#news">Newsletter</a>
-            <a href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-
-    </header>
-    <main>
-        <div class="content">
-            <h2>Falcon House News</h2>
-            <hr>
-            <div class="article">
-                <div class="article-header">
-                    <h3>Lorem Ipsum</h3>
-                </div>
-                <div class="article-preview">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non eros porta, posuere augue a, convallis ligula. Fusce non felis semper, placerat ex at, pulvinar ipsum. In enim eros, laoreet sed pulvinar nec, tincidunt nec felis. Sed turpis turpis, molestie id dui sed, ultrices pretium mauris. Aenean tristique erat nec lectus condimentum pulvinar. Nullam id quam orci. Vestibulum luctus, diam quis elementum maximus, lorem lectus semper dolor, eu semper dolor ex sed lorem. Nunc ut pharetra tortor, sit amet varius elit. Nunc sagittis placerat arcu ac accumsan. Pellentesque venenatis sem sit amet congue volutpat. Nulla at libero et urna commodo pellentesque.
-
-                    </p>
-                </div>
-                <a href="#" class="article-read-more-button">Read More</a>
-            </div>
-            <br>
-            <div class="article">
-                <div class="article-header">
-                    <h3>Lorem Ipsum</h3>
-                </div>
-                <div class="article-preview">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non eros porta, posuere augue a, convallis ligula. Fusce non felis semper, placerat ex at, pulvinar ipsum. In enim eros, laoreet sed pulvinar nec, tincidunt nec felis. Sed turpis turpis, molestie id dui sed, ultrices pretium mauris. Aenean tristique erat nec lectus condimentum pulvinar. Nullam id quam orci. Vestibulum luctus, diam quis elementum maximus, lorem lectus semper dolor, eu semper dolor ex sed lorem. Nunc ut pharetra tortor, sit amet varius elit. Nunc sagittis placerat arcu ac accumsan. Pellentesque venenatis sem sit amet congue volutpat. Nulla at libero et urna commodo pellentesque.
-
-                    </p>
-                </div>
-                <a href="#" class="article-read-more-button">Read More</a>
-            </div>
-            <br>
-            <div class="article">
-                <div class="article-header">
-                    <h3>Lorem Ipsum</h3>
-                </div>
-                <div class="article-preview">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non eros porta, posuere augue a, convallis ligula. Fusce non felis semper, placerat ex at, pulvinar ipsum. In enim eros, laoreet sed pulvinar nec, tincidunt nec felis. Sed turpis turpis, molestie id dui sed, ultrices pretium mauris. Aenean tristique erat nec lectus condimentum pulvinar. Nullam id quam orci. Vestibulum luctus, diam quis elementum maximus, lorem lectus semper dolor, eu semper dolor ex sed lorem. Nunc ut pharetra tortor, sit amet varius elit. Nunc sagittis placerat arcu ac accumsan. Pellentesque venenatis sem sit amet congue volutpat. Nulla at libero et urna commodo pellentesque.
-
-                    </p>
-                </div>
-                <a href="#" class="article-read-more-button">Read More</a>
-            </div>
-
-        </div>
-    </main>
-    <footer>
-        <a href="https://bvgsec.ca" target="_blank">
-        <img src="https://bvgsec.ca/static/circle-logo-white.png" width="10%">
+<header>
+    <h1 class="mom-cake">Falcon House</h1>
+</header>
+<div class="topnav mom-cake" id="myTopnav">
+    <div class="nav-container">
+        <a href="index.html" >HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="news.html" class="active">NEWS</a>
+        <a href="contact.html" >CONTACT</a>
+        <a href="schedule.html" >SCHEDULE</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
         </a>
-        <div class="social-media">
-            <p><b>Follow Falcon House on social media: </b></p>
-            <ul>
-                <li><a href="#"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
-            </ul>
+    </div>
+</div>
+<main>
+    <h1 class="mom-cake page-title">News</h1>
+    <hr>
+    <br>
+    <div class="news-container">
+        <div class="news-item">
+            <div class="news-header">
+                <h2 class="mom-cake">News Item</h2>
+                <p><i class="fa-solid fa-calendar"></i>&nbsp;00/00/0000</p>
+                <p><i class="fa-solid fa-user"></i>&nbsp;User</p>
+            </div>
+            <div class="news-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum massa sed finibus rhoncus. Etiam ut urna quis nisi bibendum egestas vitae ut libero. Maecenas vel nulla metus. Pellentesque consequat euismod accumsan. Aliquam varius laoreet augue vitae fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis rutrum ex fermentum auctor. Donec quam ante, luctus eget pellentesque sed, sodales at urna. Vivamus congue mauris vel magna fringilla, ac aliquam orci porta. Aenean vel nunc dolor. Etiam ut nisl erat. Proin molestie nunc a tempor iaculis. Morbi sit amet eros turpis. Praesent varius efficitur dui ac sagittis. Cras commodo convallis efficitur.
+
+                    Proin convallis bibendum tristique. Etiam sed risus eu lacus lobortis lacinia in sit amet sem. Proin finibus sed massa suscipit luctus. Morbi vulputate lobortis ex eget tincidunt. In lorem nibh, tempus sed justo quis, ultricies sodales est. Donec hendrerit enim in nibh venenatis, ut iaculis risus congue. Aliquam erat volutpat. Nullam non nisi pretium, dignissim nisl id, dictum nunc. Ut sodales leo quis nulla consectetur fringilla sit amet ac risus. Etiam felis felis, fringilla id laoreet ut, fringilla ac odio. Aliquam erat volutpat. Duis venenatis risus eros, varius semper ante iaculis a. Praesent consectetur sed leo eu lobortis. Nullam eleifend at ligula ac maximus. Mauris sed viverra erat. Curabitur et ipsum quis neque suscipit feugiat quis ac massa.
+
+
+                </p>
+            </div>
         </div>
-    </footer>
-    <script src="topnav.js"></script>
+        <div class="news-item">
+            <div class="news-header">
+                <h2 class="mom-cake">News Item</h2>
+                <p><i class="fa-solid fa-calendar"></i>&nbsp;00/00/0000</p>
+                <p><i class="fa-solid fa-user"></i>&nbsp;User</p>
+            </div>
+            <div class="news-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum massa sed finibus rhoncus. Etiam ut urna quis nisi bibendum egestas vitae ut libero. Maecenas vel nulla metus. Pellentesque consequat euismod accumsan. Aliquam varius laoreet augue vitae fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis rutrum ex fermentum auctor. Donec quam ante, luctus eget pellentesque sed, sodales at urna. Vivamus congue mauris vel magna fringilla, ac aliquam orci porta. Aenean vel nunc dolor. Etiam ut nisl erat. Proin molestie nunc a tempor iaculis. Morbi sit amet eros turpis. Praesent varius efficitur dui ac sagittis. Cras commodo convallis efficitur.
+
+                    Proin convallis bibendum tristique. Etiam sed risus eu lacus lobortis lacinia in sit amet sem. Proin finibus sed massa suscipit luctus. Morbi vulputate lobortis ex eget tincidunt. In lorem nibh, tempus sed justo quis, ultricies sodales est. Donec hendrerit enim in nibh venenatis, ut iaculis risus congue. Aliquam erat volutpat. Nullam non nisi pretium, dignissim nisl id, dictum nunc. Ut sodales leo quis nulla consectetur fringilla sit amet ac risus. Etiam felis felis, fringilla id laoreet ut, fringilla ac odio. Aliquam erat volutpat. Duis venenatis risus eros, varius semper ante iaculis a. Praesent consectetur sed leo eu lobortis. Nullam eleifend at ligula ac maximus. Mauris sed viverra erat. Curabitur et ipsum quis neque suscipit feugiat quis ac massa.
+
+
+                </p>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <h2 class="mom-cake">News Item</h2>
+                <p><i class="fa-solid fa-calendar"></i>&nbsp;00/00/0000</p>
+                <p><i class="fa-solid fa-user"></i>&nbsp;User</p>
+            </div>
+            <div class="news-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum massa sed finibus rhoncus. Etiam ut urna quis nisi bibendum egestas vitae ut libero. Maecenas vel nulla metus. Pellentesque consequat euismod accumsan. Aliquam varius laoreet augue vitae fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis rutrum ex fermentum auctor. Donec quam ante, luctus eget pellentesque sed, sodales at urna. Vivamus congue mauris vel magna fringilla, ac aliquam orci porta. Aenean vel nunc dolor. Etiam ut nisl erat. Proin molestie nunc a tempor iaculis. Morbi sit amet eros turpis. Praesent varius efficitur dui ac sagittis. Cras commodo convallis efficitur.
+
+                    Proin convallis bibendum tristique. Etiam sed risus eu lacus lobortis lacinia in sit amet sem. Proin finibus sed massa suscipit luctus. Morbi vulputate lobortis ex eget tincidunt. In lorem nibh, tempus sed justo quis, ultricies sodales est. Donec hendrerit enim in nibh venenatis, ut iaculis risus congue. Aliquam erat volutpat. Nullam non nisi pretium, dignissim nisl id, dictum nunc. Ut sodales leo quis nulla consectetur fringilla sit amet ac risus. Etiam felis felis, fringilla id laoreet ut, fringilla ac odio. Aliquam erat volutpat. Duis venenatis risus eros, varius semper ante iaculis a. Praesent consectetur sed leo eu lobortis. Nullam eleifend at ligula ac maximus. Mauris sed viverra erat. Curabitur et ipsum quis neque suscipit feugiat quis ac massa.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+</main>
+<footer>
+    <div class="flexbox">
+        <div class="footer-box">
+            <h3 class="mom-cake">Falcon House</h3>
+            <hr>
+            <a href="about.html">About</a><br>
+            <a href="news.html">News</a><br>
+            <a href="contact.html">Contact</a><br>
+            <a href="schedule.html">Schedule</a>
+        </div>
+        <div class="footer-box">
+            <h3 class="mom-cake">Social Media</h3>
+            <hr>
+            <a href=""><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br>
+            <a href=""><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <p>&copy; Falcon House 2022</p>
+</footer>
+
+<script>
+    var x = document.getElementById("myTopnav");
+
+    function openMenu() {
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    function triggerMenu(){
+        x.style.display = "block";
+
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<header>
+    <h1 class="mom-cake">Falcon House</h1>
+</header>
+<div class="topnav mom-cake" id="myTopnav">
+    <div class="nav-container">
+        <a href="index.html" >HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="news.html">NEWS</a>
+        <a href="contact.html" class="active">CONTACT</a>
+        <a href="schedule.html">SCHEDULE</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+<main>
+    <h1 class="mom-cake page-title">Contact Falcon House</h1>
+    <hr>
+    <br>
+    <form class="contact-form">
+
+        <label for="contact-name">Full Name:</label><br>
+        <input id="contact-name" name="name" placeholder="John Doe">
+
+        <br><br>
+        <label for="contact-email">Email Address:</label><br>
+        <input id="contact-email" placeholder="john@doe.com">
+
+        <br><br>
+        <label for="contact-msg">Message:</label><br>
+        <textarea id="contact-msg"></textarea>
+
+        <br><br>
+        <button type="submit" onclick="sendMsg()">Send</button>
+    </form>
+</main>
+<footer>
+    <div class="flexbox">
+        <div class="footer-box">
+            <h3 class="mom-cake">Falcon House</h3>
+            <hr>
+            <a href="about.html">About</a><br>
+            <a href="news.html">News</a><br>
+            <a href="contact.html">Contact</a><br>
+            <a href="schedule.html">Schedule</a>
+        </div>
+        <div class="footer-box">
+            <h3 class="mom-cake">Social Media</h3>
+            <hr>
+            <a href=""><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br>
+            <a href=""><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <p>&copy; Falcon House 2022</p>
+</footer>
+
+<script>
+    function sendMsg(){
+        alert("Your message has been sent!");
+        location.reload();
+    }
+</script>
+<script>
+    var x = document.getElementById("myTopnav");
+
+    function openMenu() {
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    function triggerMenu(){
+        x.style.display = "block";
+
+    }
+</script>
+</body>
+</html>

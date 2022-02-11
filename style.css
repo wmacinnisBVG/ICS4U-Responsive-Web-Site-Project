@@ -13,6 +13,18 @@ p{
 a{
     font-family: 'Open Sans', sans-serif;
 }
+.page-title{
+    font-size: 3em;
+}
+/* Subpages Header */
+header{
+    background-image: url("Images/sky.jpg");
+    padding: 25px;
+}
+header h1{
+    margin: 0px;
+    font-size: 3em;
+}
 /* General */
 ::selection {
     background: #33bc05; /* WebKit/Blink Browsers */
@@ -36,15 +48,6 @@ main{
 .content{
     padding: 25px;
     background-color:white;
-}
-.site-perpetual-masthead{
-    background-color: #33bc05;
-    color: white;
-    padding: 25px;
-    background-image: url("Images/falcon.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position-y: top;
 }
 a{
 
@@ -110,10 +113,21 @@ footer a{
 }
 .landing-hero h1{
     font-family: momCake;
-    font-size: 12em;
+
     color: white;
     margin:0px;
 }
+@media only screen and (max-width: 500px) {
+    .landing-hero h1 {
+        font-size: 6em;
+    }
+}
+@media only screen and (min-width: 501px) {
+    .landing-hero h1 {
+        font-size: 12em;
+    }}
+
+
 .landing-hero caption{
     padding: 20px;
 }
@@ -151,6 +165,20 @@ footer a{
 .landing-sub-hero-green a:hover{
     background-color:black;
     border: 3px solid black;
+    color: white;
+
+}
+.landing-sub-hero-black a{
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 3px solid white;
+    transition: 0.5s;
+}
+.landing-sub-hero-black a:hover{
+    background-color:green;
+    border: 3px solid green;
     color: white;
 
 }
@@ -197,6 +225,7 @@ footer a{
 .house-leagues-flexbox{
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .leadership-team{
     flex-wrap: wrap;
@@ -273,4 +302,55 @@ footer a{
         display: block;
         text-align: left;
     }
+}
+/* Contact */
+.contact-form input{
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid green;
+}
+.contact-form textarea{
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid green;
+    font-family: Arial;
+}
+.contact-form button{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+/* Schedule */
+.schedule-container{
+    margin-bottom: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0fr 0fr;
+    gap: 0px 33px;
+    grid-template-areas:
+    "schedule schedule event-info"
+    ". . ."
+    ". . .";
+    height: 25em;
+}
+
+.schedule { grid-area: schedule; }
+
+.event-info { grid-area: event-info; }
+/* News */
+.news-item{
+    border: 1px solid green;
+    padding: 25px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* About */
+.about-container{
+    border: 1px solid green;
+    padding: 25px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
