@@ -5,7 +5,6 @@
 }
 .mom-cake{
     font-family: momCake;
-
 }
 p{
     font-family: 'Open Sans', sans-serif;
@@ -32,14 +31,10 @@ header h1{
 ::-moz-selection {
     background: #33bc05; /* Gecko Browsers */
 }
-
-
 body{
     font-family: Arial;
     padding: 0px;
     margin: 0px;
-
-
 }
 main{
     background-color:#ececec;
@@ -135,8 +130,6 @@ footer a{
     .landing-hero h1 {
         font-size: 12em;
     }}
-
-
 .landing-hero caption{
     padding: 20px;
 }
@@ -219,7 +212,6 @@ footer a{
     font-size: 4em;
     margin: 0px;
 }
-/* Just styling the content of the div, the *magic* in the previous rules */
 .landing-hero .video-container .caption {
     z-index: 1;
     position: relative;
@@ -272,7 +264,6 @@ footer a{
     height: 100%;
     font-weight: bold;
 }
-
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
@@ -297,8 +288,6 @@ footer a{
         display: block;
     }
 }
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -344,9 +333,7 @@ footer a{
     height: 25em;
 
 }
-
 .schedule { grid-area: schedule; }
-
 .event-info { grid-area: event-info; }
 /* News */
 .news-item{
@@ -382,7 +369,4 @@ footer a{
     padding-top: 50px;
     background-image: url("Images/sky.jpg");
     background-size: cover;
-}
-
-#loading-image {
 }
