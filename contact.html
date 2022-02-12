@@ -11,87 +11,78 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<header>
-    <h1 class="mom-cake">Falcon House</h1>
-</header>
-<div class="topnav mom-cake" id="myTopnav">
-    <div class="nav-container">
-        <a href="index.html" >HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="news.html">NEWS</a>
-        <a href="contact.html" class="active">CONTACT</a>
-        <a href="schedule.html">SCHEDULE</a>
-        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</div>
-<main>
-    <h1 class="mom-cake page-title">Contact Falcon House</h1>
-    <hr>
-    <br>
-    <form class="contact-form">
-
-        <label for="contact-name">Full Name:</label><br>
-        <input id="contact-name" name="name" placeholder="John Doe">
-
-        <br><br>
-        <label for="contact-email">Email Address:</label><br>
-        <input id="contact-email" placeholder="john@doe.com">
-
-        <br><br>
-        <label for="contact-msg">Message:</label><br>
-        <textarea id="contact-msg"></textarea>
-
-        <br><br>
-        <button type="submit" onclick="sendMsg()">Send</button>
-    </form>
-</main>
-<footer>
-    <div class="flexbox">
-        <div class="footer-box">
-            <h3 class="mom-cake">Falcon House</h3>
-            <hr>
-            <a href="about.html">About</a><br>
-            <a href="news.html">News</a><br>
-            <a href="contact.html">Contact</a><br>
-            <a href="schedule.html">Schedule</a>
-        </div>
-        <div class="footer-box">
-            <h3 class="mom-cake">Social Media</h3>
-            <hr>
-            <a href=""><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br>
-            <a href=""><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
+    <!-- Page header -->
+    <header>
+        <h1 class="mom-cake">Falcon House</h1>
+    </header>
+    <!-- Topnav -->
+    <div class="topnav mom-cake" id="myTopnav">
+        <div class="nav-container">
+            <a href="index.html" >HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="news.html">NEWS</a>
+            <a href="contact.html" class="active">CONTACT</a>
+            <a href="schedule.html">SCHEDULE</a>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
-    <br><br>
-    <hr>
-    <p>&copy; Falcon House 2022</p>
-</footer>
+    <!-- Main section for page content -->
+    <main>
+        <!-- Page title -->
+        <h1 class="mom-cake page-title">Contact Falcon House</h1>
+        <hr>
+        <br>
+        <!-- Contact form -->
+        <form class="contact-form">
+            <label for="contact-name">Full Name:</label><br>
+            <input id="contact-name" name="name" placeholder="John Doe">
+            <br><br>
+            <label for="contact-email">Email Address:</label><br>
+            <input id="contact-email" placeholder="john@doe.com">
 
-<script>
-    function sendMsg(){
-        alert("Your message has been sent!");
-        location.reload();
-    }
-</script>
-<script>
-    var x = document.getElementById("myTopnav");
-
-    function openMenu() {
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    function triggerMenu(){
-        x.style.display = "block";
-
-    }
-</script>
+            <br><br>
+            <label for="contact-msg">Message:</label><br>
+            <textarea id="contact-msg"></textarea>
+            <br><br>
+            <button type="submit" onclick="sendMsg()">Send</button>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="flexbox">
+            <div class="footer-box">
+                <h3 class="mom-cake">Falcon House</h3>
+                <hr>
+                <a href="about.html">About</a><br>
+                <a href="news.html">News</a><br>
+                <a href="contact.html">Contact</a><br>
+                <a href="schedule.html">Schedule</a>
+            </div>
+            <div class="footer-box">
+                <h3 class="mom-cake">Social Media</h3>
+                <hr>
+                <a href=""><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br>
+                <a href=""><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <p>&copy; Falcon House 2022</p>
+    </footer>
+    <!-- Js to make topnav responsive -->
+    <script src="responsive.js"></script>
 </body>
 </html>
